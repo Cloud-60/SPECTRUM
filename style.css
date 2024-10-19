@@ -133,6 +133,10 @@ body.open{
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
+.mobile-nav a{
+  display: none;
+}
+
 @media(max-width:1350px){
   .header-content{
     display: none;
@@ -156,43 +160,54 @@ body.open{
   .mobile-logo{
     display: block;
   }
-  /* body{
-    background-color: #000000b6;
-  }
-  .mobile-header{
-    display: block;
-  }
-  .mobile-nav a{
-    padding: 10px;
+   .mobile-nav{
+    /* display: flex; */
+    width: 300px;
+    border: 1px solid black;
+    height: 450px;
+    flex-direction: column;
+    /* gap: 20px; */
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    background-color: #1b1b1b;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    /* align-items: center; */
+
+   }
+   .mobile-nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 30px;
+    /* border-bottom: 1px solid white; */
+    font-size: 20px;
     color: white;
-  }
-  .mobile-nav a:hover{
-  background-color: #333333;
-  }
+   }
+   .mobile-nav a:hover{
+    background-color: white;
+    color: #1b1b1b;
+
+   }
+}
+
+.close{
+  width: 40px;
+  margin: auto;
+}
+.mobile-nav.active{
+  display: flex;
+}
+@media(max-width:460px){
   .mobile-nav{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-  } */
-}
-
-
-@keyframes colorChange {
-  0% { color: red; }
-  14% { color: orange; }
-  28% { color: yellow; }
-  42% { color: green; }
-  57% { color: blue; }
-  71% { color: indigo; }
-  85% { color: violet; }
-  100% { color: red; }
-}
-.flicker-text {
-  font-size: 3rem;
-  animation: colorChange 1s linear infinite;
-  text-shadow:2px 2px 2px black;
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+  }
 }
 .hero-section{
   height: 70vh;
@@ -541,4 +556,39 @@ main{
 }
 .speaker-p{
   color: white;
+}
+
+.table{
+  margin: 40px;
+  /* border: 1px solid black; */
+  height: 300px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.row{
+  border: 1px solid rgb(195, 195, 195);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.col1{
+  /* border: 1px solid black; */
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 17px;
+}
+.col2{
+  /* border: 1px solid black; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #4144e7;
+  font-size: 17px;
 }

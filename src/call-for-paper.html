@@ -12,44 +12,48 @@
   <link rel="icon" href="../assets/logo3.png" type="image/x-icon">
 </head>
 <body>
+
+
   <div class="header">
     <header class="header-content">
       <a href="#logo" class="logo">
         <img src="../assets/logo3.png" alt="" class="logo-img">
-        <p class="logo-text">Spectrum <br>2025</p>
+        <p class="logo-text">Spectrum <br> 2025</span></p>
+        <P id="animated-text"></P>
       </a>
 
       <nav class="nav">
         <a href="../index.html">Home</a>
-        <a href="../src/organisers.html">Organisers</a>
-        <a href="../src/invited-speakers.html">Invited speakers</a>
-        <a href="../src/call-for-paper.html">Call for papers</a>
-        <a href="../src/registrations.html">Registration</a>
-        <a href="../src/important-dates.html">Important Dates</a>
+        <a href="./organisers.html">Organisers</a>
+        <a href="./invited-speakers.html">Invited speakers</a>
+        <a href="./call-for-paper.html">Call for papers</a>
+        <a href="./registrations.html">Registration</a>
+        <a href="./important-dates.html">Important Dates</a>
       </nav>
 
       <a href="#footer" class="contact">Contact Us</a>
     </header>
   </div>
-  <div class="mobile-header" id="sidebar">
-    <nav class="nav">
-      <a href="../index.html">Home</a>
-      <a href="../src/organisers.html">Organisers</a>
-      <a href="../src/invited-speakers.html">Invited speakers</a>
-      <a href="../src/call-for-paper.html">Call for papers</a>
-      <a href="../src/registrations.html">Registration</a>
-      <a href="../src/important-dates.html">Important Dates</a>
-    </nav>
-  </div>
+  <nav class="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="./organisers.html">Organisers</a>
+    <a href="./invited-speakers.html">Invited speakers</a>
+    <a href="./call-for-paper.html">Call for papers</a>
+    <a href="./registrations.html">Registration</a>
+    <a href="./important-dates.html">Important Dates</a>
+    <a href=""><img src="../assets/close.svg" alt="" class="close"></a>
+  </nav>
   <div class="nav-mobile">
-    <button class="menu-button" id="menuIcon">
-      <img type="button" src="./assets/menu.svg" alt="menu button" class="menu-icon">
+    <button class="menu-button" onclick="menuBtn()">
+      <img type="button" src="../assets/menu.svg" alt="menu button" class="menu-icon" id="menuIcon">
     </button>
 
     <a href="#logo" class="mobile-logo">
-      <img src="./assets/logo3.png" alt="" class="logo-img-mobile">
+      <img src="../assets/logo3.png" alt="" class="logo-img-mobile">
     </a>
   </div>
+
+
 <br> <br>
   <main>
     <div class="call-for-paper">
@@ -90,5 +94,6 @@
       <p class="email">Email: <a href="spectrum@iem.edu.in" >spectrum@iem.edu.in</a></p>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>
