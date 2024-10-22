@@ -500,9 +500,20 @@ main{
     width: 80%;
   }
 }
-.indian ul li{
-  text-align: left;
+@media(max-width:545px){
+    #registration-dates-para{
+    padding-top: 50px;
+  }
 }
+@media(max-width:430px){
+  #registration-dates-para{
+  padding-top: 100px;
+}
+}
+
+/* .indian ul li{
+  text-align: left;
+} */
 .foreign ul li{
   text-align: left;
 }
@@ -566,12 +577,13 @@ main{
 .table{
   margin: 40px;
   /* border: 1px solid black; */
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   width: 80%;
   display: flex;
   flex-direction: column;
-  
 }
+
 .row{
   border: 1px solid rgb(195, 195, 195);
   height: 100%;
@@ -639,4 +651,30 @@ main{
   margin: 10px;
   border-radius: 10px;
 
+}
+.india-table{
+  border: 1px solid rgb(148, 148, 148);
+  width: 80%;
+  /* height: 400px; */
+}
+.foreign-table{
+  border: 1px solid rgb(148, 148, 148);
+  width: 80%;
+}
+.india-table-row{
+  border: 1px solid rgb(219, 218, 218);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+}
+.india-table-row p{
+  /* border: 1px solid black; */
+  width: 100%;
+}
+@media(max-width:640px){
+  .india-table-row{
+    height: 90px;
+  }
 }
