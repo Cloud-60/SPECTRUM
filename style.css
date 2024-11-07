@@ -72,20 +72,26 @@ header{
   justify-content: center;
   justify-content: space-around;
 }
+.img-container img{
+  border-radius: 50%;
+}
 .nav a{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 130px;
   height: 35px;
-  background-color:var(--primary-color);
+  background-color:black;
+  border: 3px solid blue;
   border-radius: 5px;
-  color: white;
+  color: blue;
   font-size: 15px;
   text-decoration: none;
 }
 .nav a:hover{
   transform: scale(0.97);
+  color: white;
+  background-color: blue;
 }
 .contact{
   display: flex;
@@ -94,7 +100,7 @@ header{
   /* padding: 10px; */
   width: 110px;
   height: 35px;
-  color: #555;
+  color: #ffffff;
   border-radius: 5px;
   /* color: white; */
   font-size: 17px;
@@ -362,6 +368,7 @@ body.open{
   justify-content: center;
   align-items: center;
   width: 100%;
+
 }
 .about-conference{
   width: 50%;
@@ -370,9 +377,29 @@ body.open{
   color: #4144e7;
   
 }
+body{
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,27,220,1) 53%, rgba(30,30,30,1) 100%);
+}
 .about-c-p{
   font-size: 15px;
-  color: #555;
+  color: #ffffff;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.heading-index-spectrum{
+  font-size: 3em; /* Adjust font size as desired */
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, indigo, violet);
+  background-size: 200% 100%; /* Adjust to make it look continuous */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 @media(max-width:1150px){
   .hero-section{
@@ -381,6 +408,20 @@ body.open{
     width: 95%;
     /* border: 1px solid black; */
     height: auto;
+  }
+  .heading-index-spectrum{
+    font-size: 3em; /* Adjust font size as desired */
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, indigo, violet);
+    background-size: 200% 100%; /* Adjust to make it look continuous */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 3s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
   }
   .hero-content{
     width: 80%;
@@ -408,13 +449,21 @@ body.open{
   .about-c-p{
     width: 85%;
     text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
   }
+}
+h1{
+  color: white;
+}
+h2{
+  color: white;
 }
 
 footer{
   width: 100%;
   height: 200px;
-  background-color: #555;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,7 +534,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4a4ce9;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 .submit-paper:hover{
@@ -589,6 +638,7 @@ main{
   height: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #000000b6;
 }
 .col1{
   /* border: 1px solid black; */
@@ -606,7 +656,7 @@ main{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  color: #4144e7;
+  color: white;
   font-size: 17px;
 }
 
@@ -640,7 +690,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -676,5 +726,31 @@ main{
 @media(max-width:640px){
   .india-table-row{
     height: 90px;
+  }
+}
+/* body{
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,208,220,1) 53%, rgba(30,30,30,1) 100%);
+} */
+.img-container img{
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+}
+.logo-img{
+  border: 3px solid blue;
+}
+.menu-icon{
+  width: 40px;
+  border: 3px solid blue;
+  /* background-color: rgba(0, 0, 255, 0.343); */
+}
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
